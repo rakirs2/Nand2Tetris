@@ -28,3 +28,6 @@
   *  40
   *  30
   *  5000
+3. Try opening the software package on your computer
+  * Nand2tetris.org, windows instructions.
+
