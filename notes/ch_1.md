@@ -32,6 +32,7 @@
   *  5000
 3. Try opening the software package on your computer
   * Nand2tetris.org, windows instructions.
+4. [Change of Basis](https://github.com/rakirs2/General-Notes/blob/main/ChangeOfBases.md)
 
 ## Lesson 2:
 ## goals
