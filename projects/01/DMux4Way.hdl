@@ -16,5 +16,15 @@ CHIP DMux4Way {
     OUT a, b, c, d;
 
     PARTS:
-    // Put your code here:
+    // so we have 4 values, dmux is a way to 'select'
+    // so step 1 is to id that this is our previous problem, but w/ 4 values instead of 2
+    // a common paradigm we're seeing is that we use some 'magic trick' and split the values up, redo the base calculuation, and then fix again
+
+    // this line is saying, a or b w/ two operations we can use
+    DMux(in=in, sel=sel[1], a=c1, b=c2);
+    // so now we take the outputs and ask, and 'multiply them out'
+    DMux(in=c1, sel=sel[0], a=a, b=b);
+    // so c1 =  --> a and b by dmuxing again to set the first two values
+    DMux(in=c2, sel=sel[0], a=c, b=d);
+    // so c2 =  --> c and d by dmuxing again to set the first two values
 }
