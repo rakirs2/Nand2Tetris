@@ -64,9 +64,9 @@
 
 ### HW
 - Go over any mistakes (don't think there were any I could spot)
-- Make sure you have the following truth tables/Venn Diagrams memorized
- - Nand, And, Nor, Or, Xor
- - Try implementing them in HDL and the tester
+- Make sure you have the following truth tables/Venn Diagrams memorize
+  - Nand, And, Nor, Or, Xor
+  - Try implementing them in HDL and the tester
 - [shell basics](https://github.com/rakirs2/General-Notes/blob/main/ShellBasics.md)
 - Install this [extension](https://marketplace.visualstudio.com/items?itemName=roblourens.vscode-nand2tetris-hdl) in vscode 
 - Figure out what winget is and decided if you want to use it to install Microsoft.Powertoys (I use windows + space) a lot
@@ -75,6 +75,5 @@
 
 
 ## Resources If stuck
-- Appendices:
- - Boolean function synthesis
- - Hardware Description language(A2.2)
+- Boolean function synthesis
+- Hardware Description language(A2.2)
