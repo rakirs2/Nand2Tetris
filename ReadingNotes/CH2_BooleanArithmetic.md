@@ -17,12 +17,21 @@ This chapter is dedicated to "how computers count". For starters, we just need t
 ### Fixed word size
 If you've ever heard of computers being "8 bit or 16 bit," it generally refers to the limitations of the words size.
 
+One of the fundamental questions about computers is how do we take a "word size" and convert it into something meaningful for humans.
+
+- How do we represent positive and negative (and 0)
+- How do we represent decimals
+
+A question you should ask is what is the implication of a large vs a small word size and if you've ever heard of 32 and 64 bit architectures/problems caused by them.
+
 
 ## Glossary
 
 ### Arithmetic Logic Unit - ALU
 
 ### Central Processing Unit - CPU
+
+### Memory Address - reference to a specific piece of information on a computer
 
 ### nbit - any number bit binary number
 
