@@ -26,6 +26,13 @@ A question you should ask is what is the implication of a large vs a small word 
 
 ### 2.3 Binary Addition arithmetic
 
+- used example in the book of (1 0 0 1 + 0 1 0 1)
+- Overflow example ( 1 0 1 1 + 0 1 1 1)
+
+### 2.4 Signed Binary Numbers
+An n-bit binary system can code 2<sup>n</sup> different things.
+
+
 ## Glossary
 
 ### Arithmetic Logic Unit - ALU
@@ -38,7 +45,11 @@ A question you should ask is what is the implication of a large vs a small word 
 
 ### Most Significant BIts (MSB) - bits of the highest value (left most)
 
+### Overflow - when the result of an operation requires more data than the word size
+
 ### nbit - any number bit binary number
+
+### radix complement
 
 ### word size - the number of bits that a computer sues to represent a bit of information
 
