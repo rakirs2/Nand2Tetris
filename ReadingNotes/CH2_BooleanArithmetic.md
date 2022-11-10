@@ -24,6 +24,7 @@ One of the fundamental questions about computers is how do we take a "word size"
 
 A question you should ask is what is the implication of a large vs a small word size and if you've ever heard of 32 and 64 bit architectures/problems caused by them.
 
+### 2.3 Binary Addition arithmetic
 
 ## Glossary
 
@@ -31,9 +32,13 @@ A question you should ask is what is the implication of a large vs a small word 
 
 ### Central Processing Unit - CPU
 
+### Least Significant Bits (LSB) - bits with least value (right most)
+
 ### Memory Address - reference to a specific piece of information on a computer
+
+### Most Significant BIts (MSB) - bits of the highest value (left most)
 
 ### nbit - any number bit binary number
 
-### word size - th enumber of bits that a computer sues to represent a bit of information
+### word size - the number of bits that a computer sues to represent a bit of information
 
