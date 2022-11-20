@@ -69,11 +69,25 @@ CHIP ALU {
 
     // if (no == 1) set out = !out   // bitwise not
     Not16(in = OutAfterF, out = NegatedOut);
-    Mux16(a = OutAfterF, b = NegatedOut, sel = no, out = out);
 
-    // Code is working until here for no stat
+    // this is a little trick found in the appendix, how to add multiple outputs on pages 296 and 297
+    Mux16(a = OutAfterF, b = NegatedOut, sel = no, out = out, out[15]=Sign, out[0..7]=Left, out[8..15]=Right);
+
+    // Code is working until here for no stat 
     // How to check this??
-    // if (out == 0) set zr = 1
+
+    // This is some boolean 'magic'
+    // so a 16 way boolean chip checks to see if every singl
+
+    // And that is "not zero",then we know that zr = 0
+
+    // We do not have an Or16 so we're going to use two Or8s to basically generate that func
+    Or8Way(in = Left, out = leftCoalOr);
+    Or8Way(in = Right, out = rightCoalOr);
+    Or(a = leftCoalOr, b = rightCoalOr, out = nzr);
+    Not(in = nzr, out = zr);
     
-    // if (out < 0) set ng = 1
+    // // if (out < 0) set ng = 1
+    // // can we just check the first bit for this?
+    And(a=Sign, b=true, out=ng);
 }
