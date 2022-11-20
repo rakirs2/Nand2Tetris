@@ -47,6 +47,11 @@ so 2<sup>4</sup>-7 = 9
 9+7 = 0000
 ```
 
+### 2.5 Specs for the chapter
+These are the chips you'll be adding. For the most part, self explained. The goal of this section is to get to creating your own "ALU." At one point, I said all computers are, well, for computation. This is a small, small part of that.
+
+### 2.8 Reflections
+
 
 ## Glossary
 
