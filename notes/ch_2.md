@@ -30,7 +30,22 @@ A question you should ask is what is the implication of a large vs a small word 
 - Overflow example ( 1 0 1 1 + 0 1 1 1)
 
 ### 2.4 Signed Binary Numbers
-An n-bit binary system can code 2<sup>n</sup> different things.
+An n-bit binary system can code 2<sup>n</sup> different things. THe question we should ask ourselves is which bit is the bit that matters for a sign.
+
+By convention if we have an 8 bit system we use 7 bits for the 'absolute value' and 1 bit for the sign. 
+
+Should 1 be positive or negative?
+
+We use 1 as a  negation because of a really cool feature called a radix complement or the "two's complement" method.
+
+Simply put, we want any negative number to be able to be written as 2<sup>n</sup> - |number| to get our value.
+
+so 2<sup>4</sup>-7 = 9
+```
+9 = 1001
+7 = 0111
+9+7 = 0000
+```
 
 
 ## Glossary
