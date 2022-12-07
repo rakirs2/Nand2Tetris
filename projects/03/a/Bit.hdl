@@ -14,5 +14,8 @@ CHIP Bit {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    // We are using the multiplexer (if triggers mux)
+    Mux(a = t1, b = in, sel = load, out = o1);
+    // DFF is a given function so we take in the split muxed and now we return dff on either in[t] or out[t]
+    DFF(in = o1, out = t1, out = out );
 }
