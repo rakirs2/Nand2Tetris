@@ -16,4 +16,5 @@ CHIP RAM8 {
 
     PARTS:
     // Put your code here:
+    Mux8way16(in = in, sel= address, )
 }

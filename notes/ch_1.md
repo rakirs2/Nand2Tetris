@@ -74,6 +74,12 @@
 - Look at A3.1, A3.2 (These are the "how to run all of the code on the termina")
 
 
+### HW 2022_12_18
+- Make sure you can recreate the chips by going from logic to code.
+- Try completing the rest of the chips in ch1.
+- Read the chapter, let me know any questions you have.
+
+
 ## Resources If stuck
 - Boolean function synthesis
 - Hardware Description language(A2.2)
