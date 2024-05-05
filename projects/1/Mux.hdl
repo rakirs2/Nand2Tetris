@@ -11,5 +11,13 @@ CHIP Mux {
     OUT out;
 
     PARTS:
-    //// Replace this comment with your code.
+    /*
+    I think the key here is understanding that you can and 2 ifs
+    We can use the fact that we can say "if sel and if not sel"
+    and then combine it with a big and at the end
+    */
+    Not(in = sel, out = notSel);
+    Or(a = notSel, b = b, out = selB);
+    Or(a = sel, b= a, out = selA);
+    And(a = selA, b = selB, out = out);
 }
