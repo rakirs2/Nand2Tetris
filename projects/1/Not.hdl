@@ -11,5 +11,11 @@ CHIP Not {
     OUT out;
 
     PARTS:
-    //// Replace this comment with your code.
+    /*
+    How do we get it to flip. Can we just call Nand?
+    |in|nand(in, in)| out|
+    |0| 1| 1
+    |1|0|0
+    */
+    Nand(a = in, b = in, out = out);
 }

@@ -11,5 +11,17 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    //// Replace this comment with your code.
+    /*
+    How can we check equality of a or b? 
+    So at its core, we are trying to flip the not a and not b scenario
+
+    We know from before that we can flip any single function by just calling nand on it
+
+    So using our knowledge of how to get a single value, we can get not a and not b and flip that value
+    */
+
+    Not(in = a, out = notA);
+    Not(in = b, out = notB);
+    And(a = notA, b = notB, out = and1);
+    Nand(a = and1, b = and1, out = out);
 }
