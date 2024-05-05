@@ -11,5 +11,14 @@ CHIP Or8Way {
     OUT out;
 
     PARTS:
-    //// Replace this comment with your code.
+    /* The key here is that unlike and, is
+    that it's 7 ors
+    */
+    Or(a = in[0], b = in[1], out = cmp1);
+    Or(a = in[2], b = in[3], out = cmp2);
+    Or(a = in[4], b = in[5], out = cmp3);
+    Or(a = in[6], b = in[7], out = cmp4);
+    Or(a = cmp1, b = cmp2, out = cmp5);
+    Or(a = cmp3, b = cmp4, out = cmp6);
+    Or(a = cmp5, b = cmp6, out = out);
 }

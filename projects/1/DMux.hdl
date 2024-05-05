@@ -13,4 +13,13 @@ CHIP DMux {
 
     PARTS:
     //// Replace this comment with your code.
+    /* 
+    this might be simliar to Mux. Two if statements.
+    but how do we set the values. Run them both, output different variables?
+
+    Note, I mixed these two up. 
+    */
+    Not(in = sel, out = notSel);
+    And(a = notSel, b = in, out = a);
+    And(a = sel, b = in, out = b);
 }
