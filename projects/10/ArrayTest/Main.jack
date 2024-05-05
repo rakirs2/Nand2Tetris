@@ -3,7 +3,7 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/10/ArrayTest/Main.jack
 
-// (identical to projects/09/Average/Main.jack)
+// (same as projects/9/Average/Main.jack)
 
 /** Computes the average of a sequence of integers. */
 class Main {
