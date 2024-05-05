@@ -12,4 +12,16 @@ CHIP Xor {
 
     PARTS:
     //// Replace this comment with your code.
+    /*
+    This is given in the text. But what we want to do is flip the known equivalence operation
+    x and y or not x and not y
+
+    Then nand Not or Nand on that. There has to be an easier way?
+    */
+    Not(in = a, out = notX);
+    Not(in = b, out = notY);
+    And(a = a, b = b, out = xAndY);
+    And(a = notX, b = notY, out = notXAndNotY);
+    Or(a = xAndY, b = notXAndNotY, out = equivalence);
+    Not(in = equivalence, out = out);
 }
