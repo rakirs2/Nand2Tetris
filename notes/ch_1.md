@@ -6,7 +6,7 @@
 - Understand HDL language/setup
 - Implement all of the gates listed in the chapter
 
-## 1.1 Boolean Algebra
+## 1 Boolean Algebra
 In common parlance, we say something is either true or false. This is represented as a *boolean*. This true or false relationship is the fundamental building block of all of computer science.
 
 We represent *true* and *false* as 1 and 0 respectively. 
