@@ -12,4 +12,10 @@ CHIP HalfAdder {
 
     PARTS:
     //// Replace this comment with your code.
+    /*
+    Based off of the outputs of carry and sum, these are the same as 
+    AND, XOR
+    */
+    And(a = a, b = b, out = carry);
+    Xor(a = a, b = b, out = sum);
 }
