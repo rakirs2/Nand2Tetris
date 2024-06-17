@@ -14,4 +14,8 @@ CHIP Bit {
 
     PARTS:
     //// Replace this comment with your code.
+    // So we need to select one of the two outs with the selector bit of load(t)
+
+    Mux(a = t, b = in, sel = load, out = w);
+    DFF(in = w, out = t, out = out);
 }
